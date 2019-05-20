@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t jieqiong/docker-react -f Dockerfile .
 
-# script:
-#   - docker run jieqiong/docker-react npm run test -- --coverage
+script:
+  - docker run jieqiong/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
